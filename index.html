@@ -1,34 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <title>Evelyn Frech</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="stylesheet" type="text/css" href="assests/css/styte.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evelyn Frech</title>
+  <link rel="stylesheet" href="./asset/css/resets.css" />
+  <link rel="stylesheet" href="./asset/css/style.css" />
+</head>
 
-  <body>
-    <header class="main-header">
-      <h1>Evelyn Frech</h1>
-      <navbar>
-          <ul>
-              <li ref="about">About me
-              </li>
-              <li>
-                  Work
-              </li>
-              <li>
-                  Contact Me
-              </li>
-              <li>Resume
-              </li>
-          </ul>
-      </navbar>
-    </header>
-    <hr>
-    <main>
-    </main>
-  </body>
+<body>
+<!-- navbar -->
+  <header>
+    <nav class="navbar">
+      <div>
+        <img class="logo" src="./asset/images/E.png" alt="logo"/>
+      </div>
+      <ul class="nav-list">
+        <li class="list-item">
+          <a href="#about">About Me</a>
+        </li>
+        <li class="list-item">
+          <a href="#work">Work</a>
+        </li>
+        <li class="list-item">
+          <a href="#contact">Contact me</a>
+        </li>
+        <li class="list-item">
+          <a href="#resume">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+<!-- header image-->
+  <div class="banner-image"></div>
+<!-- section: about me-->
+  <section>
+    <div class="flex-container">
+      <div class="flex-right" id="about">
+        ABOUT ME
+      </div>
+      <div class="flex-left">
+        This has content in the right box.
+      </div>
+    </div>
+  </section>
+<!-- section: my work-->
+<section>
+  <div class="flex-container">
+    <div class="flex-right" id="work">
+      PROJECTS
+    </div>
+    <div class="flex-left">
+      <ul>
+        <li class="flex-project">
+          this is project 1
+        </li>
+      </ul>
+      <ul>
+        <li class="flex-project">
+          this is project 2
+        </li>
+      </ul>
+      <ul>
+        <li class="flex-project">
+          this is project 3
+        </li>
+      </ul>
+      <ul>
+        <li class="flex-project">
+          this is project 4
+        </li>
+      </ul>
+      <ul>
+        <li class="flex-project">
+          this is project 5
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- section: contact me-->
+<section>
+  <div class="flex-container">
+    <div class="flex-right" id="contact">
+      CONTACT ME
+    </div>
+    <div class="flex-left">
+      This has content in the right box.
+    </div>
+  </div>
+</section>
+
+  <footer>
+    Thanks for visiting!
+  </footer>
+</body>
 
 </html>
