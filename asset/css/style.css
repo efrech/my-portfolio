@@ -45,29 +45,29 @@
     background-image: url("../images/background.png");
     height: 150px;
     background-size: cover;
-    /* background-color: rgb(214, 84, 84); */
-    border: 2px solid;
     background-repeat: repeat;
     padding-bottom: 10px;
     margin-bottom: 30px;
   }
-
+/* flex container body*/
   .flex-container {
     display: flex;
     flex-direction: row;
     justify-content: left;
     margin: 20px 0;
-    border: 2px solid;
-  }
-  
-  .flex-left {
-    width: 75%;
-    height: 50vh;
-    margin: 5px;
-    padding: 5px;
   }
   
   .flex-right {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    /* height: 50vh; */
+    margin: 5px;
+  }
+  
+  .flex-left {
+    display: flex;
+    flex-wrap: wrap;
     width: 20%;
     margin: 5px;
     padding: 5px;
@@ -77,15 +77,84 @@
     font-size: 24px;
   }
 
-  .flex-project {
+  .flex-right .project {
+    flex-grow: 1;
+    border: 2px solid aquamarine;
+  }
+
+  .project-image {
+    background-image: url("../images/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg");
+    height: 300px;
+    text-decoration: none;
+  }
+
+  .project-image1 {
+    background-image: url("../images/background.png");
+    height: 300px;
+    text-decoration: none;
+  }
+
+  .project-image2 {
+    background-image: url("../images/header-background.png");
+    height: 300px;
+    text-decoration: none;
+  }
+
+
+  .project-image:hover,  .project-image1:hover, .project-image2:hover, .project-image3:hover, .project-image4:hover    {
+    opacity: 0.5;
+  }
+
+  h3 {
+    margin-bottom: 5px;
+  }
+
+  .project-box {
+    align-self: flex-end;
+    background-color: aqua;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .secondary-projects {
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid;
+    flex: 50%;
+    border: 2px solid aqua;
+  }
+
+  .contact-item {
+    justify-content: space-evenly;
+  }
+
+  .contact-item a {
+    text-decoration: none;
+    margin: auto;
+    color: var(--menu-font-color);
+    border-bottom: 3px solid #d6354a;
+    padding-bottom: 3px;
+  }
+  .contact-item a:hover {
+    color: rgb(89, 89, 143);
+    cursor:  pointer;
   }
 
   footer {
     display: flex;
     justify-content: center;
     padding: 20px;
-    border: 2px solid;
   }
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+  /* on tablets, set columns to only be 50% of the width and not grow */
+  .secondary-projects {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* select the last child to grow to full width if it has space to grow */
+  .secondary-projects:last-child {
+    flex-grow: 1;
+  }
+}
