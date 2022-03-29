@@ -2,16 +2,16 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
   }
 :root {
-  --navbar-background: #F8F8FF;
-  --menu-font-color: rgb(75, 75, 75);
-
+  --navbar-background: #ffffff;
+  --menu-font-color: #51414F;
+  --background-color: #f7f7f8;
 }
   .logo {
     width: 30%;
-    padding: 5px;
+    /* justify-content: left; */
   }
 
   /* menu styling*/
@@ -39,44 +39,58 @@
 
   .navbar a:hover {
     opacity: 0.5;
+    border-bottom: 3px solid rgb(89, 89, 143);
+    padding-bottom: 3px;
   }
 
   .banner-image {
-    background-image: url("../images/background.png");
-    height: 150px;
+    background-image: url("../images/bannerimage.png");
+    height: 260px;
     background-size: cover;
-    background-repeat: repeat;
-    padding-bottom: 10px;
     margin-bottom: 30px;
   }
+
 /* flex container body*/
   .flex-container {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    margin: 20px 0;
+    margin: 15px 0;
   }
   
   .flex-right {
     display: flex;
     flex-wrap: wrap;
     width: 60%;
-    /* height: 50vh; */
-    margin: 5px;
+    margin: 15px;
   }
   
   .flex-left {
     display: flex;
     flex-wrap: wrap;
-    width: 20%;
-    margin: 5px;
-    padding: 5px;
+    justify-content: right;
+    width: 25%;
+    padding: 20px;
     border-right: 4px solid green;
     color: var(--menu-font-color);
     font-weight: bold;
-    font-size: 24px;
+    font-size: 30px;
+  }
+/* Bio image styling */
+  .bio-image {
+    width: 50%;
+    justify-self: flex-end;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+  /* capitalize first letter */
+  .flex-right p::first-letter {
+      font-size: 250%;
+      color: var(--menu-font-color)
   }
 
+/* work showcase */
   .flex-right .project {
     flex-grow: 1;
     border: 2px solid aquamarine;
@@ -100,7 +114,6 @@
     text-decoration: none;
   }
 
-
   .project-image:hover,  .project-image1:hover, .project-image2:hover, .project-image3:hover, .project-image4:hover    {
     opacity: 0.5;
   }
@@ -122,7 +135,7 @@
     flex: 50%;
     border: 2px solid aqua;
   }
-
+/* contact me submenu */
   .contact-item {
     justify-content: space-evenly;
   }
@@ -131,7 +144,7 @@
     text-decoration: none;
     margin: auto;
     color: var(--menu-font-color);
-    border-bottom: 3px solid #d6354a;
+    border-bottom: 3px solid rgb(89, 89, 143);
     padding-bottom: 3px;
   }
   .contact-item a:hover {
