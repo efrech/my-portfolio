@@ -8,10 +8,11 @@
   --navbar-background: #ffffff;
   --menu-font-color: #51414F;
   --background-color: #f7f7f8;
+  --project-border-color: hsl(195, 17%, 77%);
 }
   .logo {
     width: 30%;
-    /* justify-content: left; */
+    margin-top: 10px;
   }
 
   /* menu styling*/
@@ -71,17 +72,17 @@
     justify-content: right;
     width: 25%;
     padding: 20px;
-    border-right: 4px solid green;
+    border-right: 4px solid rgba(7, 138, 7, 0.979);
     color: var(--menu-font-color);
     font-weight: bold;
     font-size: 30px;
   }
 /* Bio image styling */
   .bio-image {
-    width: 50%;
+    width: 70%;
     justify-self: flex-end;
     background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 25px;
   }
   /* capitalize first letter */
@@ -93,27 +94,49 @@
 /* work showcase */
   .flex-right .project {
     flex-grow: 1;
-    border: 2px solid aquamarine;
+    border: 4px solid var(--project-border-color);
   }
 
   .project-image {
-    background-image: url("../images/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg");
-    height: 300px;
+    background-image: url("../images/project\ image.png");
+    background-size: cover;
+    height: 320px;
+    background-repeat: no-repeat;
     text-decoration: none;
   }
 
   .project-image1 {
     background-image: url("../images/background.png");
-    height: 300px;
+    background-size: cover;
+    height: 200px;
+    justify-content: space-between;
+    background-repeat: no-repeat;
     text-decoration: none;
   }
 
   .project-image2 {
-    background-image: url("../images/header-background.png");
-    height: 300px;
+    background-image: url("../images/virginia-marinova-bm9r-_MdUgY-unsplash.jpg");
+    height: 200px;
+    justify-content: space-between;
+    background-repeat: no-repeat;
     text-decoration: none;
   }
 
+  .project-image3 {
+    background-image: url("../images/header-background.png");
+    height: 200px;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    text-decoration: none;
+  }
+  
+  .project-image4 {
+    background-image: url("../images/bannerhome.png");
+    height: 200px;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    text-decoration: none;
+  }
   .project-image:hover,  .project-image1:hover, .project-image2:hover, .project-image3:hover, .project-image4:hover    {
     opacity: 0.5;
   }
@@ -124,7 +147,7 @@
 
   .project-box {
     align-self: flex-end;
-    background-color: aqua;
+    background-color: var(--project-border-color);
     padding: 10px;
     margin-bottom: 10px;
   }
@@ -133,7 +156,7 @@
     display: flex;
     flex-wrap: wrap;
     flex: 50%;
-    border: 2px solid aqua;
+    border: 2px solid var(--project-border-color);
   }
 /* contact me submenu */
   .contact-item {
