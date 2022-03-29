@@ -95,7 +95,7 @@
 /* work showcase */
   .flex-right .project {
     flex-grow: 1;
-    border: 4px solid var(--project-border-color);
+    border: 5px solid var(--project-border-color);
     font-family: fantasy;
   }
 
@@ -158,7 +158,7 @@
     display: flex;
     flex-wrap: wrap;
     flex: 50%;
-    border: 2px solid var(--project-border-color);
+    border: 5px solid var(--project-border-color);
   }
 /* contact me submenu */
   .contact-item {
@@ -197,11 +197,33 @@
 
 
 /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 760px) {
   /* on tablets, set columns to only be 50% of the width and not grow */
   .secondary-projects {
     flex: 0 0 50%;
     max-width: 50%;
+  }
+
+  .nav-list .list-item {
+    display: flex;
+    float: inline-end;
+    /* padding: 20px 10px; */
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 15px 0;
+  }
+  
+  .flex-left {
+    min-width: 40%;
+    border-right: 0;
+    border-bottom: 4px solid rgba(7, 138, 7, 0.979);
+    color: var(--menu-font-color);
+    font-weight: bold;
+    font-size: 30px;
   }
 
   /* select the last child to grow to full width if it has space to grow */
