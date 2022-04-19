@@ -10,7 +10,7 @@ This is a general website with brief information about me, my projects &amp; con
 
 ## Mock-up
 
-![alt text](./asset/images/EvelynFrech_Index.png)
+![alt text](./asset/images/readmeimage.png)
 
 ### live URL
 
